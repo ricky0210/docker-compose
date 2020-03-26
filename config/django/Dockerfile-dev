@@ -1,0 +1,11 @@
+FROM python:3.6
+
+ENV PYTHONUNBUFFERED 0
+
+WORKDIR /app
+
+ADD    ./djangosample   /app/djangosample/
+ADD    ./manage.py      /app/
+ADD    ./config/django/requirement.txt /app/
+
+RUN pip install -r ./requirement.txt

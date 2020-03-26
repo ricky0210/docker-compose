@@ -1,0 +1,6 @@
+Django
+Djangorestframework
+Gunicorn
+psycopg2-binary
+
+
